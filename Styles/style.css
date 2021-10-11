@@ -1,0 +1,163 @@
+:root {
+    --jato: #353535;
+    --ming: #3C6c71;
+    --branco: #FFFFFF;
+    --gainsboro: #D9D9D9;
+    --coranteIndigo: #284B63;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+}
+
+body {
+    background-color: var(--gainsboro);
+    color: var(--jato);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 345px 1fr;
+}
+
+.sideLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-right: 2px solid var(--branco);
+    text-align: center;
+    background: var(--jato);
+}
+
+.sideLeft .addNew {
+    cursor: pointer;
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: var(--ming);
+}
+
+.sideLeft .fieldInput {
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 17px;
+    outline: none;
+}
+
+.sideLeft .button {
+    height: 39px;
+    width: 63px;
+    background: var(--ming);
+    outline: none;
+    border-radius: 5px;
+    border-color: var(--coranteIndigo);
+}
+
+.sideLeft .form {
+    margin-bottom: 20px;
+}
+
+.sideLeft .messageErro {
+    color: #ff2300;
+    font-size: 18.1px
+}
+
+.sideRight {
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    padding: 50px;
+}
+
+.field {
+    background: var(--coranteIndigo);
+    color: var(--branco);
+    height: auto;
+    min-height: 360px;
+    width: 760px;
+    border-radius: 7px;
+    text-align: center;
+    overflow-y: scroll;
+    padding: 20px;
+    box-shadow: 4px 7px 10px #7a7777;
+    margin-bottom: 30px;
+}
+
+.field .titleTask {
+    margin-bottom: 30px;
+}
+
+.field .task {
+    color: rgb(10, 10, 10);
+    background: var(--ming);
+    margin: 15px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-size: 22px;
+
+}
+
+.field .task .text {
+    font-size: 23px;
+    color: var(--branco);
+    letter-spacing: 1px;
+}
+
+.field .task.done {
+    text-decoration: line-through;
+    color: #fdfdfd47;
+}
+
+.field .task .buttonDone {
+    background: rgb(13, 156, 13);
+    border-radius: 100%;
+    padding: 8px;
+    margin-left: 7px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.field .task .buttonRemover {
+    background: rgb(219, 21, 21);
+    border-radius: 100%;
+    padding: 8px;
+    margin-left: 7px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.areaButton {
+    display: flex;
+    justify-content: center;
+}
+
+.areaButton .buttonOut {
+    margin: 0 5px ;
+    padding: 0 5px;
+    border:none;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+}
+
+.areaButton .removeAll {
+    background: rgb(219, 21, 21);
+}
+
+.circleGreen {
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
